@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode.woff2");
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner.ttf");
+}
+
+html {
+  min-height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Commissioner", sans-serif;
+}
+
+#content {
+  width: 55%;
+}
+
+.title {
+  text-align: left;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+.date {
+  font-size: 14px;
+  color: #948985;
+}
+
+a {
+  color: #000000;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.links {
+  overflow: hidden;
+  margin: auto;
+  width: 75%;
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.links a {
+  color: #948985;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+.links a:hover {
+  color: #000000;
+  /* text-decoration: underline; */
+}
+
+.links a.active {
+  color: #000000;
+}
+
+.center {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.prominent {
+  font-family: "Cascadia Code";
+  font-size: 100px;
+  font-weight: 700;
+  position: relative;
+  transform: translateY(-50%);
+  color: #191919;
+}
+
+.org-ul li {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.org-ul a {
+  font-weight: 500;
+}
+
+#org-div-home-and-up {
+  display: none;
+}
+
+.about-container {
+  padding-top: 10%;
+  text-align: left;
+  width: 65%;
+  overflow: hidden;
+  margin: auto;
+  line-height: 1.675;
+  counter-reset: definition;
+  text-rendering: optimizeLegibility;
+  font-size: 20px;
+}
+
+.about-container a {
+  color: #000000;
+  font-size: 17px;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+.footer {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b2aead;
+}
+
+::-moz-selection {
+  background: #cbd9e3;
+}
+
+::selection {
+  background: #cbd9e3;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .posts {
+    padding: 5% 10%;
+  }
+
+  .prominent {
+    font-size: 34px;
+  }
+
+  #content {
+    width: 90%;
+  }
+
+  .links {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 912px) {
+  .anim-typewriter-text {
+    width: 7em;
+    margin: 0 auto;
+    border-right: 2px solid #2c363c;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .anim-typewriter {
+    animation: typewriter 1.25s steps(12) 1s 1 normal both,
+      blinkTextCursor 600ms steps(12) infinite normal;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 7.2em;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: #2c363c;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+}

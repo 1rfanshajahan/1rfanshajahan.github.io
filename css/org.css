@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner.ttf"),
+}
+@font-face {
+  font-family: "Cascadia Code";
+  src: url("../fonts/CascadiaCode.woff2");
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 20px;
+  line-height: 1.7em;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+ul.org-ul {
+  line-height: 1.4em;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #685c56;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1em;
+}
+
+h2 {
+  padding-top: 50px;
+}
+
+h3 {
+  padding-top: 40px;
+}
+
+h4 {
+  padding-top: 30px;
+}
+
+code {
+  font-size: 16px;
+  background-color: #f1f1f1;
+}
+
+img {
+  max-width: 100%;
+}
+
+#content {
+  margin: 0 auto;
+  max-width: 55%;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+#org-div-home-and-up {
+  text-align: right;
+  font-size: 15px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 10px;
+  padding-right: 20px;
+}
+
+#text-table-of-contents ul {
+  list-style: none;
+}
+
+#text-table-of-contents a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#text-table-of-contents a:hover {
+  text-decoration: underline;
+  color: #685c56;
+}
+
+#footnotes {
+  padding-top: 2em;
+}
+
+.footref {
+  text-decoration: none;
+}
+
+pre.src {
+  font-family: "Cascadia Code", monospace;
+  font-size: 14px;
+  line-height: 1.5em;
+  background-color: #f7f7f7;
+  padding: 20px;
+    border: none;
+}
+
+pre.src:before {
+  background: #f7f7f7;
+}
+
+.links {
+  display: none;
+}
+
+.footer {
+  bottom: 0;
+  padding-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
+}
+
+::-moz-selection {
+  background: #cbd9e3;
+}
+
+::selection {
+  background: #cbd9e3;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #content {
+    max-width: 90%;
+  }
+  pre.src {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
